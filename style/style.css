@@ -40,7 +40,7 @@ a{
     color:black;
     text-decoration: none;
 }
-a:hover{
+ul a:hover{
     color: brown;
 }
 .container{
@@ -86,12 +86,17 @@ h2{
     padding:8px 30px;
     margin:30px 0;
     border-radius: 30px;content: "\2192"; 
+    transition: background 0.5s;
 }
 .divBtn{
     padding-left:2em;
     
 }
+.btn:hover{
+    background: #563434;
+}
 .header{
     background: radial-gradient(#fff,#fbd6d6);
 }
+
 
