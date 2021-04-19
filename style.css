@@ -3,6 +3,9 @@
     padding: 0;
     box-sizing: border-box;
 }
+body{
+    font-family: 'Poppins',sans-serif;
+}
 .navBar{
     display: flex;
     text-align: center;
@@ -14,9 +17,8 @@
 h1{
     padding: 20px;
     padding-left: 2px;  
-    font-family:cursive;
     font-weight: lighter;
-    text
+    font-family: 'Playfair Display', serif;
 }
 nav {
     flex:1;
@@ -26,10 +28,69 @@ nav {
 nav ul{
     display: inline-block;
     list-style-type: none;
-    padding: 21px;
+    padding: 20px;
 }
 
 nav ul li{
     display: inline-block;
     margin-right: 20px;
+    padding: 10px;
+}
+a{
+    color:black;
+    text-decoration: none;
+}
+a:hover{
+    color: brown;
+}
+.container{
+    max-width: 1300px;
+    margin:auto;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.row{
+    display: flex;
+    align-items: center;
+    flex-wrap:wrap;
+    justify-content: space-around;
+}
+
+.col-1{
+    flex-basis:50%;
+    min-width: 300px;
+}
+
+.col-2 img{
+  max-width: 100%;
+  padding: 50px 0; 
+}
+.col-1 h1{
+    font-size: 50px;
+    line-height:60px;
+    margin:25px 0;
+    padding-right: 10%;
+    font-family: 'Playfair Display', serif;
+}
+h2{
+   padding-left: 1em;
+}
+.p-index{
+    padding-left:2em;
+}
+.btn{
+    display: inline-block;
+    background:#ff523b;
+    color:#fff;
+    padding:8px 30px;
+    margin:30px 0;
+    border-radius: 30px;content: "\2192"; 
+}
+.divBtn{
+    padding-left:2em;
+    
+}
+.header{
+    background: radial-gradient(#fff,#fbd6d6);
 }
