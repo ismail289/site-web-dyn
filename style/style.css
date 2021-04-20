@@ -6,11 +6,12 @@
 body{
     font-family: 'Poppins',sans-serif;
 }
+/**************************I-La bare de site********************************/
 .navBar{
     display:flex;
-    /*text-align: center;*/
     padding: 5px;
 }
+/*******1-logo**********/
 .navBar .logo{
     padding-left: 1px;
 }
@@ -22,7 +23,7 @@ body{
 .logo img{
     margin-left: -2em;
 }
-
+/******2-titre**********/
 .navBar h1{
     padding-top:10px;
     margin-left:-10px; 
@@ -36,6 +37,7 @@ body{
 .titre p{
     margin-left: -7px;
 }
+/*******3-MENU**********/
 nav {
     flex:1;
     text-align: right;
@@ -58,6 +60,7 @@ nav ul li{
 a{
     color:black;
     text-decoration: none;
+    font-size: 17px;
 }
 ul a:hover{
     color: brown;
@@ -69,36 +72,28 @@ ul a:hover{
     padding-right: 25px;
 }
 
+/*********ROW*********/
 .row{
     display: flex;
     align-items: center;
     flex-wrap:wrap;
     justify-content: space-around;
 }
-
+/*******colone1*******/
 .col-1{
     flex-basis:50%;
     min-width: 300px;
-    margin-top: -3%;
-}
-
-.col-2 img{
-  max-width: 100%;
-  padding: 50px 0 500px 0; 
-  width: 430px; 
+    margin-top: -10%;
 }
 .col-1 h1{
     font-size: 50px;
     line-height:60px;
-    margin:25px 0;
+    margin:25px 0 25px -15px;
     padding-right: 10%;
     font-family: 'Playfair Display', serif;
 }
-h2{
-   padding-left: 0em;
-}
-.p-index{
-    padding-left:1em;
+.titre2::first-letter{
+    font-size: 200%;
 }
 .btn{
     display: inline-block;
@@ -110,19 +105,35 @@ h2{
     transition: background 0.5s;
 }
 .divBtn{
-    padding-left:2em;
+    padding-left:1em;
     padding-bottom: 1em;
     
 }
 .btn:hover{
     background: #563434;
 }
+.condition{
+    padding-bottom: 2em;
+}
+/*******colone2*******/
+.col-2 img{
+  max-width: 100%;
+  padding: 50px 0 20px 0; 
+  width: 310px; 
+}
+/******Header********/
 .header{
     background: radial-gradient(#fff,#fbd6d6);
 }
 .header .row{
     margin-top: 70px;
 }
+
+p{
+    font-family: cursive;
+}
+
+/********featured categories********/
 .categories{
     margin:70px 0
 }
@@ -134,12 +145,7 @@ h2{
 .col-3 img{
     width:100%
 }
-.smallcontainer{
-    max-width: 1080px;
-    margin:auto;
-    padding-left: 20px;
-    padding-right: 20px;
-}
+
 
 .catalogue li p{
     margin: 10px 0;
@@ -151,13 +157,24 @@ h2{
     font-size: 18px;
     padding-left: 1em;
 }
-p{
-    font-family: cursive;
-}
-.titre2::first-letter{
-    font-size: 200%;
-}
 
-.condition{
-    padding-bottom: 2em;
+/******featured products*******/
+.smallcontainer{
+    max-width: 1080px;
+    margin:auto;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.col-4{
+    flex-basis:25%;
+    padding:10px;
+    min-width: 200px;
+    
+}
+.col-4 img{
+    width:100%;
+}
+.smallcontainer h2{
+    padding-bottom: 1em;
+    font-size: 25px;
 }
