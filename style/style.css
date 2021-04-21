@@ -173,6 +173,7 @@ p{
 }
 .col-4 img{
     width:100%;
+    transition:transform 0.5s ;
 }
 .title{
     text-align: center;
@@ -201,4 +202,50 @@ h4{
 }
 .rating .bi{
     color:#ff523b;
+}
+.col-4:hover{
+    transform: translateY(-10px);
+}
+/******offer******/
+.offer{
+    background: radial-gradient(#fff,#fbd6d6);
+    margin-top:40px;
+    margin-bottom: 40px;
+    padding : 30px 0 10px;
+}
+.offer .col-2 img{
+    margin-top: -30%;
+    width:420px;
+}
+small{
+    color:#555;
+}
+.col-1 h3{
+    color:#555;
+    margin-left: -15px;
+}
+.colection small{
+    margin-left: -30%;
+}
+em{
+    text-decoration: line-through;
+    font-size: 12px;
+}
+.btnn{
+     display: inline-block;
+     background:#ff523b;
+     color:#fff;
+     padding:5px 10px;
+     margin:10px 0;
+     border-radius: 2px;
+
+}
+.offer .col-2 .rating{
+    margin:-22% -30% 0% 35%;
+    font-size: 15px;
+}
+
+.rating .chevron-left{
+    margin-right: 9em;
+    margin-left: -11%; 
 }
