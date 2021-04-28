@@ -13,19 +13,23 @@ body{
 }
 /**************************1-logo***********************/
 .navBar .logo{
-    padding-left: 1px;
+    padding-left: 0px;
+    
 }
 
 .logo{
     display: flex;
 }
 
-.logo img{
+.navBar .logo img{
     margin-left: -2em;
+    margin-top: -5px;
+    height: 80px;
+    width:90px;
 }
 /**************************2-titre**********************/
 .navBar h1{
-    padding-top:10px;
+    padding-bottom:-4px;
     margin-left:-10px; 
     font-weight:lighter;
     font-size: 35px;
@@ -36,6 +40,7 @@ body{
 }
 .titre p{
     margin-left: -7px;
+    font-size: 14px;
 }
 /***************************3-MENU***********************/
 nav {
@@ -46,32 +51,40 @@ nav {
 
 nav ul{
     display: inline-block;
-    padding: 20px;
+    padding: 15px;
     margin-right: -40px;
+    margin-bottom: -10px;
+    margin-top: 4px;
 }
 
 nav ul li{
     display: inline-block;
     margin-right: 15px;
-    padding: 10px 5px;
+    padding:10px 5px;
 }
 
 
 a{
     color:black;
     text-decoration: none;
-    font-size: 17px;
+    font-size: 18px;
 }
 ul a:hover{
     color: brown;
 }
+
 .container{
+    background: radial-gradient(#fff,#ff523b38);
     max-width: 1300px;
-    margin:auto;
     padding-left: 25px;
     padding-right: 25px;
 }
-
+.menu-icon,.bag{
+    width:28px;
+    margin-left: 20px;
+    margin-top: 27px;
+    padding-left:10px;
+}
 /*********************************ROW****************************/
 .row{
     display: flex;
@@ -119,7 +132,8 @@ ul a:hover{
 .col-2 img{
   max-width: 100%;
   padding: 50px 0 20px 0; 
-  width: 310px; 
+  width: 310px;
+  cursor: pointer; 
 }
 /***********************************Header**************************************/
 .header{
@@ -143,7 +157,7 @@ p{
     margin-top: 5px;
 }
 .col-3 img{
-    width:100%
+    width:100%;
 }
 
 
@@ -338,7 +352,7 @@ em{
   
   .footer-dark .item.text p {
     opacity:0.6;
-    margin-bottom:0;
+    margin-bottom:0px;
   }
   
   .footer-dark .item.social {
@@ -377,3 +391,74 @@ em{
     font-size:13px;
     margin-bottom:0;
   }
+  .container{
+      /*background-color: #ff523b;*/
+      background: radial-gradient(#fff,#ff523b38);
+      background-size: 1px;      
+}
+
+/*------- media query for menu ------ */
+.menu-icon{
+    display: none;
+}
+
+@media only screen and (max-width:819px){
+    nav ul{
+        position: absolute;
+        top:70px;
+        left:0;
+        background: #333;
+        width: 100%;
+        padding-top: 0;
+        overflow: hidden;
+        /*transition: max-height 0.5s;*/
+    }
+    nav ul li{
+        display: block;
+        margin: 10px;
+        color:#fff;
+    }
+    .menu-icon{
+        display: block;
+        cursor: pointer;
+    }   
+}
+/*------- media query for less than 600 screen size ------ */
+@media only screen and (max-width:600px){
+    .row{
+        text-align: center;
+    }
+    .col-2,.col-3,.col-4{
+        flex-basis: 100%;
+    }
+}
+
+/*-----------------page de produits-----------*/
+.row-2{
+    justify-content: space-between;
+    margin:100px auto 50px;
+}
+select{
+    border: 1px solid #ff523b;
+    padding: 8px;
+}
+select:focus{
+  outline: none;
+}
+.page-btn{
+    margin:0 auto 80px;
+}
+.page-btn span{
+    display:inline-block;
+    border: 1px solid #ff523b;
+    margin-left: 10px;
+    width:40px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    cursor:pointer;
+}
+.page-btn span:hover{
+    background: #ff523b;
+    color: #fff;
+}

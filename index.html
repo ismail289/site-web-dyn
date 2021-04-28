@@ -20,29 +20,29 @@
 <body>
  <!----------------Page header------------------>
  <div class="header">
-   <div class="container">
-    
+  <div class="container">
     <div class="navBar">
         <div class="logo">
-            <a href="index.html"><img src="/img/logoBooks.png" width="90px" height="90px"></a>
+            <a href="index.html"><img src="/img/logoBooks.png" ></a>
             <ul class="titre">
              <li><h1>Lampe scientifique</h1></li>
              <li><p>la grand bibliothèque numérique en ligne</p></li>
             </ul>
         </div>
         <nav>
-         <ul>
-             <a href=""><li>Accueil</li></a>
-             <a href=""><li>Produits</li></a>
-             <a href=""><li>À propos de</li></a>
+         <ul id="MenuItemes">
+             <a href="index.html"><li>Accueil</li></a>
+             <a href="products.html"><li>Produits</li></a>
              <a href=""><li>Contact</li></a>
              <a href=""><li>Compte</i></li></a>
-             <a href=""><li class="bag"><i class="bi bi-bag-fill"></i></li></a>
+             
          </ul>
         </nav>
+         <a href="" class="bag"><i class="bi bi-bag-fill"></i></a>
+         <a href="" class="menu-icon"><i class="bi bi-list" onclick="menutoggle()"></i></a>
      </div>
 
-  </div>
+   </div>
    
    <div class="row">
      <div class="col-1">
@@ -273,7 +273,7 @@
 
 <div class="footer-dark">
   <footer>
-      <div class="container">
+      <div class="container2">
           <div class="row">
               <div class="col-sm-6 col-md-3 item">
                   <h3>Services</h3>
@@ -309,8 +309,23 @@
       </div>
   </footer>
 </div>
-<!--script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script!-->
+  <!--script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script!-->
 
+<!----------js for toggle menu---------->
+ <script>
+   var MenuItemes=document.getElementById("MenuItemes");
+   MenuItemes.style.maxHeight="0px";
+   function menutoggle(){
+     if(MenuItemes.style.maxHeight=="0px")
+      {
+        MenuItemes.style.maxHeight="220px";
+      }
+      else
+      {
+        MenuItemes.style.maxHeight="0px";
+      }  
+   }
+ </script>
 </body>
 </html>
