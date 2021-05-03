@@ -15,12 +15,12 @@
     <link href="https://fonts.googleapis.com/css2?family=Karantina:wght@300;400;700&family=Oswald:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Karantina:wght@300;400;700&family=Oswald:wght@200;300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet"> 
     <!--titre-->
-    <title>Produits</title>
+    <title>details des Produits</title>
 </head>
 <body>
  <!----------------Page header------------------>
  <div class="header">
-  <div class="container cont">
+  <div class="container">
     
     <div class="navBar">
         <div class="logo">
@@ -35,7 +35,7 @@
              <a href="index.html"><li>Accueil</li></a>
              <a href="products.html"><li>Produits</li></a>
              <a href=""><li>Contact</li></a>
-             <a href="acount.html"><li>Compte</i></li></a>
+             <a href=""><li>Compte</i></li></a>
              
          </ul>
         </nav>
@@ -47,23 +47,65 @@
 
   </div>  
 
-  <div class="smallcontainer">
+<!--------Single product details---------->
+  <div class="smallcontainer single-product" >
+      <div class="row">
+          <div class="col-1">
+             <img src="/img/linux.jpg" width="100%" id="ProductImg">
+
+             <div class="small-img-row-">
+              <div class="small-img-col-">
+                  <img src="/img/linux.jpg" width="100%" class="small-img">
+              </div>
+             <div class="small-img-col-">
+                <img src="/img/linux1.jpg" width="100%" class="small-img">
+             </div>
+             <div class="small-img-col-">
+                <img src="/img/linux2.jpg" width="100%" class="small-img">
+             </div>
+             <div class="small-img-col-">
+                <img src="/img/linux4.jpg" width="100%" class="small-img">
+             </div>
+           
+         </div>
+          
+          <div class="col-2">
+              <h1>The Linux Command Line</h1>
+              <p>2nd Edition: A Complete Introduction</p>
+              <h4>$14.99</h4>
+              <select name="" id="">
+                  <option value="">Select format</option>
+                  <option value="">PDF</option>
+                  <option value="">PPTX</option>
+                  <option value="">DOC</option>
+                  <option value="">MP3</option>
+              </select>
+              <input type="number" value="1">
+              <a href="" class="btn">Ajouter au panier</a><br><br>    
+              <h3>Détails du produit <i class="bi bi-text-indent-left "></i></h3>
+              <br>
+              <p><i>The Linux Command Line </i> vous emmène de vos toutes premières frappes terminales à l’écriture de programmes complets en Bash,
+                la coquille Linux la plus populaire (ou ligne de commande).
+                En chemin, vous apprendrez les compétences intemporelles transmises par des générations de gourous expérimentés qui évitent la souris : navigation de fichiers,
+                configuration de l’environnement, chaîne de commandes, appariement des motifs avec des expressions régulières.</p>
+          </div>
+      </div>
+  </div>
+   <!-------------title--------------->
+   <div class="smallcontainer">
      <div class="row row-2">
-       <h2>Tous les produits</h2>
-       <select>
-         <option>Tri par défaut</option>
-         <option>Trier par prix</option>
-         <option>Trier par popularité</option>
-         <option>Trier par notation</option>
-         <option>Trier par vente</option>
-       </select>
+       <h2>Related Product</h2>
+       <p>View More</p>
      </div>
-     
+   </div>
+   <!-------->
+ 
+  <div class="smallcontainer">
      <div class="row">
-       <!--------Products ligne 1---------->
+       
        <div class="col-4">
-         <a href="products-details.html"><img src="/img/linux.jpg"></a>
-         <a href="products-details.html"><h4>The linux command line</h4></a>
+         <a href=""><img src="/img/Python_Crash_Course.jpg"></a>
+         <a href=""><h4>Python Crash Course</h4></a>
          <div class="rating">
           <i class="bi bi-star-fill"></i>
           <i class="bi bi-star-fill"></i>
@@ -99,131 +141,20 @@
          </div>
          <p>$19,38</p>
         </div> 
-        
-      <div class="col-4">
-        <a href=""><img src="/img/pere.jpg"></a>
-        <a href=""><h4>Père riche Père pauvre</h4></a>
-        <div class="rating">
-         <i class="bi bi-star-fill"></i>
-         <i class="bi bi-star-fill"></i>
-         <i class="bi bi-star-fill"></i>
-         <i class="bi bi-star-half"></i> 
-         <i class="bi bi-star"></i> 
-        </div>
-        <p>$00,00 Gratuit</p>
-      </div> 
-
-      <!--------Products ligne 2---------->
-      <div class="col-4">
-        <a href=""><img src="/img/book1.jpg"></a>
-        <a href=""><h4>On the House: A Washington Memoir</h4></a>
-        <div class="rating">
-         <i class="bi bi-star-fill"></i>
-         <i class="bi bi-star-fill"></i>
-         <i class="bi bi-star-fill"></i>
-         <i class="bi bi-star-fill"></i>
-         <i class="bi bi-star-half"></i>
-        </div>
-        <p>$14,99</p>
-       </div> 
      
      <div class="col-4">
-       <a href=""><img src="/img/book2.jpg"></a>
-       <a href=""><h4>A Brief History of Time</h4></a>
-       <div class="rating">
-        <i class="bi bi-star-fill"></i>
-        <i class="bi bi-star-fill"></i>
-        <i class="bi bi-star-fill"></i>
-        <i class="bi bi-star-fill"></i>
-        <i class="bi bi-star"></i>
-       </div>
-       <p>$9.99</p>
-      </div> 
-
-    <div class="col-4">
-        <a href=""><img src="/img/book3.jpg"></a>
-        <a href=""><h4>Everything you need to ace Math in one big fat notebook</h4></a>
-        <div class="rating">
-         <i class="bi bi-star-fill"></i>
-         <i class="bi bi-star-fill"></i>
-         <i class="bi bi-star-fill"></i>
-         <i class="bi bi-star-fill"></i>
-         <i class="bi bi-star-fill"></i>
-        </div>
-        <p>$7.40</p>
-       </div> 
-       
-     <div class="col-4">
-       <a href=""><img src="/img/book4.jpg"></a>
-       <a href=""><h4>Eloquent JavaScript</h4></a>
-       <div class="rating">
-        <i class="bi bi-star-fill"></i>
-        <i class="bi bi-star-fill"></i>
-        <i class="bi bi-star-fill"></i>
-        <i class="bi bi-star-half"></i> 
-        <i class="bi bi-star"></i> 
-       </div>
-       <p>$19.86</p>
-     </div> 
-      <!--------Products ligne 3---------->
-      <div class="col-4">
-        <a href=""><img src="/img/Python_Crash_Course.jpg"></a>
-        <a href=""><h4>Python Crash Course</h4></a>
-        <div class="rating">
-         <i class="bi bi-star-fill"></i>
-         <i class="bi bi-star-fill"></i>
-         <i class="bi bi-star-fill"></i>
-         <i class="bi bi-star-fill"></i>
-         <i class="bi bi-star-half"></i>
-        </div>
-        <p>$20,00</p>
-       </div> 
-     
-     <div class="col-4">
-       <a href=""><img src="/img/java.jpg"></a>
-       <a href=""><h4>Java: A Beginner’s Guide</h4></a>
-       <div class="rating">
-        <i class="bi bi-star-fill"></i>
-        <i class="bi bi-star-fill"></i>
-        <i class="bi bi-star-fill"></i>
-        <i class="bi bi-star-fill"></i>
-        <i class="bi bi-star"></i>
-       </div>
-       <p>$18,56</p>
-      </div> 
-
-    <div class="col-4">
-        <a href=""><img src="/img/php.jpg"></a>
-        <a href=""><h4>PHP and MySQL for Dynamic Web Sites</h4></a>
-        <div class="rating">
-         <i class="bi bi-star-fill"></i>
-         <i class="bi bi-star-fill"></i>
-         <i class="bi bi-star-fill"></i>
-         <i class="bi bi-star-fill"></i>
-         <i class="bi bi-star-fill"></i>
-        </div>
-        <p>$19,38</p>
-       </div> 
-       
-     <div class="col-4">
-       <a href=""><img src="/img/pere.jpg"></a>
-       <a href=""><h4>Père riche Père pauvre</h4></a>
-       <div class="rating">
-        <i class="bi bi-star-fill"></i>
-        <i class="bi bi-star-fill"></i>
-        <i class="bi bi-star-fill"></i>
-        <i class="bi bi-star-half"></i> 
-        <i class="bi bi-star"></i> 
-       </div>
-       <p>$00,00 Gratuit</p>
-     </div>  
-    </div>
-    <div class="page-btn">
-      <span>1</span>
-      <span>2</span>
-      <span>3</span>
-      <span>4</span>
-      <span>&#8594</span>
+          <a href=""><img src="/img/book4.jpg"></a>
+          <a href=""><h4>Eloquent JavaScript</h4></a>
+            <div class="rating">
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-half"></i> 
+              <i class="bi bi-star"></i> 
+            </div>
+            <p>$19.86</p>
+          </div>
+    
     </div>
 
    </div>
@@ -233,7 +164,7 @@
 
 <div class="footer-dark">
   <footer>
-      <div class="container2">
+      <div class="container3">
           <div class="row">
               <div class="col-sm-6 col-md-3 item">
                   <h3>Services</h3>
@@ -287,5 +218,30 @@
       }  
    }
  </script>
+
+ <!---------------js for product gallery-------------->
+   <script>
+     var ProductImg=document.getElementById("ProductImg");
+     var SmallImg=document.getElementsByClassName("small-img");
+        SmallImg[0].onclick=function()
+         { 
+           ProductImg.src=SmallImg[0].src;
+         }
+         SmallImg[1].onclick=function()
+         { 
+           ProductImg.src=SmallImg[1].src;
+         }
+         SmallImg[2].onclick=function()
+         { 
+           ProductImg.src=SmallImg[2].src;
+         }
+         SmallImg[3].onclick=function()
+         { 
+           ProductImg.src=SmallImg[3].src;
+         }
+  
+     
+
+   </script>
 </body>
 </html>

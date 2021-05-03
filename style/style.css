@@ -9,7 +9,7 @@ body{
 /**************************I-La bare de site********************************/
 .navBar{
     display:flex;
-    padding: 5px;
+    padding: 5px 5px 5px 10px;
 }
 /**************************1-logo***********************/
 .navBar .logo{
@@ -75,7 +75,7 @@ ul a:hover{
 
 .container{
     background: radial-gradient(#fff,#ff523b38);
-    max-width: 1300px;
+    max-width: 13000px;
     padding-left: 25px;
     padding-right: 25px;
 }
@@ -394,7 +394,7 @@ em{
   .container{
       /*background-color: #ff523b;*/
       background: radial-gradient(#fff,#ff523b38);
-      background-size: 1px;      
+      background-size: 1px; 
 }
 
 /*------- media query for menu ------ */
@@ -431,6 +431,19 @@ em{
     .col-2,.col-3,.col-4{
         flex-basis: 100%;
     }
+    .single-product .row{
+        text-align: left;
+    }
+    .single-product.col-2{
+        padding: 20px 0;
+    }
+    .single-product h1{
+        font-size: 26px;
+        line-height: 32px;
+    }
+    .carte-info p{
+        display: none;
+    }
 }
 
 /*-----------------page de produits-----------*/
@@ -461,4 +474,201 @@ select:focus{
 .page-btn span:hover{
     background: #ff523b;
     color: #fff;
+}
+/*----------single product details--------*/
+
+.single-product .col2 img{
+    padding:0;
+}
+.single-product .col-1{
+    margin: 50px;;
+    display: inline;
+}
+.single-product h4{
+    margin:20px 0;
+    font-size: 22px;
+    font-weight:bold;
+}
+.single-product select{
+    display: block;
+    padding: 10px;
+    margin-top: 20px;
+}
+.single-product input{
+    width: 50px;
+    height:40px;
+    padding-left: 10px;
+    font-size: 20px;
+    margin-right:10px;
+    border:1px solid #ff523b;
+}
+input:focus{
+    outline:none;
+}
+.single-product .bi-text-indent-left{
+   color:#ff523b; 
+}
+.small-img-row-{
+    display: flex;
+    justify-content: space-between;
+}
+.small-img-col-{
+    flex-basis: 24%;
+    cursor: pointer;
+}
+.single-product .col-1{
+    flex-basis:30%;
+    min-width: 400px;
+    margin-top: 10%;
+    margin-left: -40%;
+}
+.single-product .col-2{
+    flex-basis:30%;
+    min-width: 300px;
+    margin-top: -180%;
+    margin-left: 140%;
+    margin-right: -40%;
+}
+footer{
+    padding: 40px;
+    margin-left:-1px;
+    width: 100%;
+    height: 100%;
+}
+/*--------------- carte items -------------*/
+.cart-page{
+    margin:80px auto;
+}
+.smallcontainer table{
+    margin-top: 40px;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-bottom: 40px;
+    font-size: 20px;
+}
+.table{
+    width: 100%;
+    border-collapse: collapse;
+}
+.cart-info{
+    display:flex;
+    flex-wrap: wrap;
+}
+th{
+    text-align: left;
+    padding: 5px 140px 5px 5px;
+    color:#fff;
+    background: #ff523b;
+    font-weight: normal;
+}
+td{
+    padding: 10px 5px;
+}
+td input{
+    width: 40px;
+    height: 30px;
+    padding: 5px;
+}
+td a{
+    color: #ff523b;
+    font-size: 12px; 
+}
+td img{
+    width:80px;
+    height:80px;
+    margin-right:10px;
+    margin-top: -5px;
+}
+
+.total-price{
+    display: flex;
+    justify-content: flex-end;
+}
+.total-price table{
+    border-top:3px solid #ff523b;
+    width: 100%;
+    max-width:400px;
+    margin-top: -5%;
+    margin-right: 120px;
+}
+td:last-child{
+    text-align: right;
+}
+th:last-child{
+    text-align: right;
+}
+
+/*-------------Acount page-----------*/
+.acount-page{
+    padding: 50px 0;  
+}
+.cont{
+    background: #fff;
+}
+.form-container{
+    background: #fff;
+    width: 350px;
+    height:450px;
+    position: relative;
+    text-align: center;
+    padding: 20px 0;
+    margin: auto;
+    box-shadow: 0 0 20px 0px rgba(0,0,0,0.1);
+}
+.col1{
+    margin-left: 0%;
+    width: 500px;
+}
+.col2{
+    margin-right: 100px;
+}
+.form-container span{
+    font-weight: bold;
+    padding: 0 10px;
+    color:#555;
+    cursor:pointer;
+    width: 100px;
+    display: inline-block;
+}
+.form-btn{
+    display: inline-block;
+}
+.form-container form{
+    max-width: 300px;
+    padding: 0 20px;
+    position: absolute;
+    top: 130px;
+    transition: transform 1s;
+}
+form input{
+    width:100%;
+    height: 30px;
+    margin: 10px 0;
+    padding: 0 10px;
+    border: 1px solid #ccc;
+}
+form .btn{
+    width: 100%;
+    border:none;
+    cursor: pointer;
+    margin: 10px 0;
+    outline: none;
+}
+#LoginForm{
+    left:-300px;
+}
+#RegForm{
+    left:0;
+}
+form a{
+    font-size: 12px;
+}
+#Indicator{
+    width: 100px;
+    border: none;
+    background: #ff523b;
+    height: 3px;
+    margin-top: 8px;
+    transform: translateX(100px);
+    transition: transform 1s;
 }
