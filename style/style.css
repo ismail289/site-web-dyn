@@ -614,6 +614,7 @@ th:last-child{
     padding: 20px 0;
     margin: auto;
     box-shadow: 0 0 20px 0px rgba(0,0,0,0.1);
+    overflow: hidden;
 }
 .col1{
     margin-left: 0%;
@@ -624,7 +625,7 @@ th:last-child{
 }
 .form-container span{
     font-weight: bold;
-    padding: 0 10px;
+    padding: 0 0px;
     color:#555;
     cursor:pointer;
     width: 100px;
@@ -637,7 +638,9 @@ th:last-child{
     max-width: 300px;
     padding: 0 20px;
     position: absolute;
-    top: 130px;
+    top: 85px;
+    left: 20px;
+    margin-left: 20px;
     transition: transform 1s;
 }
 form input{
@@ -646,12 +649,13 @@ form input{
     margin: 10px 0;
     padding: 0 10px;
     border: 1px solid #ccc;
+   
 }
 form .btn{
     width: 100%;
     border:none;
     cursor: pointer;
-    margin: 10px 0;
+    margin: 12px 0;
     outline: none;
 }
 #LoginForm{
@@ -662,13 +666,86 @@ form .btn{
 }
 form a{
     font-size: 12px;
+    color: #555;
 }
 #Indicator{
-    width: 100px;
+    width: 105px;
     border: none;
     background: #ff523b;
     height: 3px;
     margin-top: 8px;
-    transform: translateX(100px);
+    transform: translateX(105px);
     transition: transform 1s;
+}
+#jour,#mois,#annee{
+    margin: 2 0;
+    width: 83px;
+    height: 34px;
+    text-align:left;
+    z-index: 1;
+    border: 1px solid #ccc;
+    font-style:normal;
+}
+#loginForm , #RegForm{
+    padding-bottom: 5em;
+}
+#check{
+    color:#555;
+}
+
+/*----------loginForm---------*/
+hr{
+    height: 0px;
+    width: 300px;
+    border-width:none;
+    color: rgb(102, 39, 70);
+    background-color: rgb(102, 39, 70);
+}
+#l1,#l2{
+    height: 0px;
+    width: 105px;
+    border-width:none;
+    color: gray;
+    background-color: rgb(102, 39, 70);
+}
+#lignes{
+    margin-left: -4px;
+}
+#fb{
+    background-color: #3b5998;
+    margin: 2 0;
+    padding-left:2em;
+    width:100%;
+    height: 35px;
+    border-radius: 1rem;
+    border:2px solid  #3b5998 ;
+    font-style:normal;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    color: rgba(255, 255, 255, 0.787);
+    background-image: url("/img/fb.png");
+    background-repeat: no-repeat;
+    background-position-x: left;
+    background-position-y: center;
+    background-size: 2em 2em;
+    font-size: 12px;
+    cursor: pointer;
+}
+#checkActive{
+    width: 1rem;
+    height: 1rem;
+    margin-top: 10px;
+
+}
+#garder{
+    font-size:15px;;
+    color: #555;
+    font-weight: bold;
+    margin-top: 12px;
+}
+form #pwd{
+    margin-bottom:-1px;
+    
+}
+form #forget{
+    padding-left: 163px;
 }

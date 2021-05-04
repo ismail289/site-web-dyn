@@ -16,6 +16,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Karantina:wght@300;400;700&family=Oswald:wght@200;300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet"> 
     <!--titre-->
     <title>Compte</title>
+    <link rel="icon" href="img/logoBooks4.png"  type="image/png">
 </head>
 <body>
  <!----------------Page header------------------>
@@ -39,7 +40,7 @@
              
          </ul>
         </nav>
-         <a href="" class="bag"><i class="bi bi-bag-fill"></i></a>
+         <a href="cart.html" class="bag"><i class="bi bi-bag-fill"></i></a>
          <a href="" class="menu-icon"><i class="bi bi-list" onclick="menutoggle()"></i></a>
      </div>
 
@@ -56,22 +57,57 @@
             <div class="col2">
                   <div class="form-container">
                       <div class="form-btn">
-                          <span onclick="login()">Login</span>
-                          <span onclick="register()">Register</span>
+                          <span onclick="login()">Connexion</span>
+                          <span onclick="register()">Inscription</span>
                           <hr id="Indicator">                                        
                      </div>
                       <form id="LoginForm">
-                          <input type="text" placeholder="Username">
-                          <input type="password" placeholder="Password">
-                          <button type="submit" class="btn">Login</button>
-                          <a href="">Forgot password</a>
+                          <input type="email" placeholder="Email">
+                          <input type="password" id="pwd" placeholder="Password">
+                          <a href="" id="forget">Forgot password?</a><br><br>
+                          <button type="submit" class="btn">Se connecter</button>
+                          <table  id="lignes" style="width: 0%;">
+                            <tr>
+                            <td><hr id="l1"></td>
+                            <td><label id="ou">ou</label></td>
+                            <td><hr id="l2"></td>
+                            </tr>
+                          </table>
+                         <a href=""><input id="fb" name="fb" type="button" value="Connectez-vous depuis Facebook"></a> 
+                          
+                          <div>
+                              <input type="checkbox" id="checkActive" name="active">
+                              <label for="active" id="garder">Garder ma session active</label>
+                          </div>
+                          
                       </form>
                       
+                      
                       <form id="RegForm">
-                        <input type="text" placeholder="Username">
-                        <input type="email" placeholder="email">
+                       
+                        <input type="text" id="nom" name="nom" placeholder="Nom">
+                        <input type="text" id="prenom" name="prenom" placeholder="Prenom">
+                        <input type="email" placeholder="Email">
                         <input type="password" placeholder="Password">
-                        <button type="submit" class="btn">Register</button>
+                        <input type="text" id="jour" name="jour" placeholder="jour">
+                        <select id="mois" name="mois" placeholder="mois" >
+                            <option value="m1">janvier</option>
+                            <option value="m2">fevrier</option>
+                            <option value="m3">mars</option>
+                            <option value="m4">avril</option>
+                            <option value="m5">mai</option>
+                            <option value="m6">juin</option>
+                            <option value="m7">juillet</option>
+                            <option value="m8">aout</option>
+                            <option value="m9">septembre</option>
+                            <option value="m10">octobre</option>
+                            <option value="m11">novembre</option>
+                            <option value="m12">décembre</option>
+                        </select>
+                       <input id="annee" name="annee" placeholder="année">
+                       <button type="submit" class="btn">S'inscrire</button>        
+                       <label id="check">Vous avez déjà un compte ?</label><br>
+                       <a href="">connectez-vous</a>
                       </form>
                   </div>
             </div>
@@ -144,16 +180,35 @@
       var RegForm=document.getElementById("RegForm");
       var Indicator=document.getElementById("Indicator");
          function register(){
-             RegForm.style.tranform="translateX(0px)";
-             LoginForm.style.tranform="translateX(0px)";
+             RegForm.style.marginLeft="5%";
+             LoginForm.style.marginLeft="0%";
              Indicator.style.transform="translateX(100px)";
          }
          function login(){
-             RegForm.style.tranform="translateX(300px)";
-             LoginForm.style.tranform="translateX(300px)";
+             RegForm.style.marginLeft="100%";
+             LoginForm.style.marginLeft="90%";
              Indicator.style.transform="translateX(0px)";
          }
   </script>
 
+<script>
+    const loginText = document.querySelector(".title-text .login");
+    const loginForm = document.querySelector("form.login");
+    const loginBtn = document.querySelector("label.login");
+    const signupBtn = document.querySelector("label.signup");
+    const signupLink = document.querySelector("form .signup-link a");
+    signupBtn.onclick = (()=>{
+      loginForm.style.marginLeft = "-50%";
+      loginText.style.marginLeft = "-50%";
+    });
+    loginBtn.onclick = (()=>{
+      loginForm.style.marginLeft = "0%";
+      loginText.style.marginLeft = "0%";
+    });
+    signupLink.onclick = (()=>{
+      signupBtn.click();
+      return false;
+    });
+  </script>
 </body>
 </html>
