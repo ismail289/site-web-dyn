@@ -25,17 +25,14 @@
     
     <div class="navBar">
         <div class="logo">
-            <a href="index.html"><img src="/img/logoBooks.png" ></a>
-            <ul class="titre">
-             <li><h1>Lampe scientifique</h1></li>
-             <li><p>la grand bibliothèque numérique en ligne</p></li>
-            </ul>
+             <a href="index.html"><img src="/img/logoBooks.png" ></a>
+             <img src="img/logoLampe4.png">
         </div>
         <nav>
          <ul id="MenuItemes">
              <a href="index.html"><li>Accueil</li></a>
              <a href="products.html"><li>Produits</li></a>
-             <a href=""><li>Contact</li></a>
+             <a href="about.html"><li>À propos de</li></a>
              <a href="acount.html"><li>Compte</i></li></a>
              
          </ul>
@@ -64,7 +61,11 @@
                       <form id="LoginForm">
                           <input type="email" placeholder="Email">
                           <input type="password" id="pwd" placeholder="Password">
-                          <a href="" id="forget">Forgot password?</a><br><br>
+                          <div id="eye">
+                              <i class="bi bi-eye"></i>
+                              <a href="" id="forget">Forgot password?</a>
+                          </div>
+                          
                           <button type="submit" class="btn">Se connecter</button>
                           <table  id="lignes" style="width: 0%;">
                             <tr>
@@ -77,7 +78,7 @@
                           
                           <div>
                               <input type="checkbox" id="checkActive" name="active">
-                              <label for="active" id="garder">Garder ma session active</label>
+                              <label for="checkActive" id="garder">Garder ma session active</label>
                           </div>
                           
                       </form>
@@ -89,7 +90,17 @@
                         <input type="text" id="prenom" name="prenom" placeholder="Prenom">
                         <input type="email" placeholder="Email">
                         <input type="password" placeholder="Password">
-                        <input type="text" id="jour" name="jour" placeholder="jour">
+                        <!--input type="text" id="jour" name="jour" placeholder="jour"-->
+                        <select id="mois" name="mois" placeholder="mois" >
+                            <option>1</option><option>2</option><option>3</option><option>4</option> 
+                            <option>5</option><option>6</option><option>7</option><option>8</option>
+                            <option>9</option><option>10</option><option>11</option><option>12</option>
+                            <option>13</option><option>14</option><option>15</option><option>16</option> 
+                            <option>17</option><option>18</option><option>19</option><option>20</option>
+                            <option>21</option><option>22</option><option>23</option><option>24</option>
+                            <option>25</option><option>26</option><option>7</option><option>28</option> 
+                            <option>29</option><option>30</option><option>31</option>
+                        </select>
                         <select id="mois" name="mois" placeholder="mois" >
                             <option value="m1">janvier</option>
                             <option value="m2">fevrier</option>
@@ -107,7 +118,7 @@
                        <input id="annee" name="annee" placeholder="année">
                        <button type="submit" class="btn">S'inscrire</button>        
                        <label id="check">Vous avez déjà un compte ?</label><br>
-                       <a href="">connectez-vous</a>
+                       <a onclick="login()">connectez-vous</a>
                       </form>
                   </div>
             </div>

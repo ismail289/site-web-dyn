@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 body{
-    font-family: 'Poppins',sans-serif;
+   font-family: 'Poppins',sans-serif;
 }
 /**************************I-La bare de site********************************/
 .navBar{
@@ -21,11 +21,19 @@ body{
     display: flex;
 }
 
-.navBar .logo img{
+.navBar .logo a img{
     margin-left: -2em;
     margin-top: -5px;
     height: 80px;
     width:90px;
+}
+.logo  img{
+    margin-left: -3em;
+    margin-top: -60px;
+    margin-bottom: -64px;
+    height: 215px;
+    width:215px;
+    cursor: pointer;
 }
 /**************************2-titre**********************/
 .navBar h1{
@@ -56,7 +64,6 @@ nav ul{
     margin-bottom: -10px;
     margin-top: 4px;
 }
-
 nav ul li{
     display: inline-block;
     margin-right: 15px;
@@ -85,6 +92,8 @@ ul a:hover{
     margin-top: 27px;
     padding-left:10px;
 }
+/*--------------------------------page About----------------------------*/
+
 /*********************************ROW****************************/
 .row{
     display: flex;
@@ -135,6 +144,35 @@ ul a:hover{
   width: 310px;
   cursor: pointer; 
 }
+
+/*--------------------------------page index----------------------------*/
+.colIndex2 img{
+    max-width: 100%;
+    padding: 0px 50px 20px 0px; 
+    margin-top: -50px;
+    width: 600px;
+    cursor: pointer; 
+}
+.col-1 img{
+    margin-top:-40px;
+    margin-bottom: 30px;
+    margin-left:-15px; 
+    width: 550px;
+    height: 500px;
+}
+#lampeLivre{
+    margin-top: -200px;
+    margin-left: 90px;
+    margin-bottom: 30px;
+}
+#lampeLivre h2{
+    font-family: 'Playfair Display', serif;
+    font-size: 35px;
+    line-height:60px;
+    margin:25px 0 25px 0px;
+    padding-right: 10%;
+}
+
 /***********************************Header**************************************/
 .header{
     background: radial-gradient(#fff,#fbd6d6);
@@ -675,7 +713,7 @@ form a{
     height: 3px;
     margin-top: 8px;
     transform: translateX(105px);
-    transition: transform 1s;
+    transition: transform 0.5s;
 }
 #jour,#mois,#annee{
     margin: 2 0;
@@ -731,21 +769,33 @@ hr{
     cursor: pointer;
 }
 #checkActive{
-    width: 1rem;
-    height: 1rem;
+    width: 1em;
+    height: 1em;
     margin-top: 10px;
-
+    
 }
 #garder{
-    font-size:15px;;
+    font-size:14px;;
     color: #555;
     font-weight: bold;
     margin-top: 12px;
 }
 form #pwd{
-    margin-bottom:-1px;
+    margin-bottom:12px;
     
 }
-form #forget{
+div #forget{
     padding-left: 163px;
+    padding-top: 1em;
+
+}
+.bi-eye{
+   padding-left: 230px;
+   cursor: pointer;
+}
+#eye{
+    margin-top: -34px;
+}
+#RegForm a{
+    cursor:pointer;
 }
